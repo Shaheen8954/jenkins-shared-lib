@@ -1,4 +1,4 @@
-def call(string imageName, string ImageVersion){
-  sh "docker build -t ${imageName}:${imageVersion}
-  
+// jenkins-shared-lib/vars/dockerbuild.groovy
+def call(String imageName, String imageVersion) {
+    sh "docker build -t ${imageName}:${imageVersion}"
 }
